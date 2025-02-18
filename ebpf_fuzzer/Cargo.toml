@@ -1,0 +1,9 @@
+[package]
+name = "ebpf_fuzzer"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rbpf = { git = "https://github.com/qmonnet/rbpf" }
+clap = { version = "4.5", features = ["derive"] }
+rand = "0.9.0"
