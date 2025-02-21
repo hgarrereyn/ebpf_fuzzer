@@ -7,8 +7,8 @@ from pathlib import Path
 
 app = Flask(__name__)
 
-RUNNER = '/ebpf/ebpf-for-windows/x64/Debug/ebpf_conformance_runner.exe'
-PLUGIN_PATH = 'C:/ebpf/ebpf-for-windows/x64/Debug/bpf2c_plugin.exe'
+RUNNER = 'C:\\ebpf\\ebpf-for-windows\\x64\\Debug\\bpf_conformance_runner.exe'
+PLUGIN_PATH = 'C:\\ebpf\\ebpf-for-windows\\x64\\Debug\\bpf2c_plugin.exe'
 
 def run_ebpf_conformance(prog_path, timeout_seconds=30):
     try:
@@ -16,12 +16,12 @@ def run_ebpf_conformance(prog_path, timeout_seconds=30):
         result = subprocess.run(
             [
                 RUNNER,
-                # '--test_file_path', prog_path,
-                # '--cpu_version', 'v4',
-                # '--exclude_regex', 'local',
-                # '--plugin_path', PLUGIN_PATH,
-                # '--debug', 'true',
-                # '--plugin_options', '\"--include C:/ebpf/ebpf-for-windows/include\"'
+                '--test_file_path', prog_path,
+                '--cpu_version', 'v4',
+                '--exclude_regex', 'local',
+                '--plugin_path', PLUGIN_PATH,
+                '--debug', 'true',
+                '--plugin_options', '\"--include C:/ebpf/ebpf-for-windows/include\"'
             ],
             capture_output=True,
             text=True,
