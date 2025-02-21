@@ -60,30 +60,29 @@ def run():
             }), 400
 
         # Create a temporary directory for our files
-        with tempfile.TemporaryDirectory() as temp_dir:
-            prog_path = Path(temp_dir) / "test.prog"
-            
-            # Write the program to a file
-            with open(prog_path, 'w') as f:
-                f.write(data['program'])
-            
-            # Get timeout from request or use default
-            timeout = data.get('timeout', 30)
-            
-            print('Running conformance test', data['program'])
+        prog_path = "./test.prog"
+        
+        # Write the program to a file
+        with open(prog_path, 'w') as f:
+            f.write(data['program'])
+        
+        # Get timeout from request or use default
+        timeout = data.get('timeout', 30)
+        
+        print('Running conformance test', data['program'])
 
-            # Run the conformance test
-            result = run_ebpf_conformance(prog_path, timeout)
-            
-            print('Conformance test result', result)
+        # Run the conformance test
+        result = run_ebpf_conformance(prog_path, timeout)
+        
+        print('Conformance test result', result)
 
-            # Prepare response
-            response = {
-                "status": "success" if result["success"] else "error",
-                "result": result
-            }
-            
-            return jsonify(response)
+        # Prepare response
+        response = {
+            "status": "success" if result["success"] else "error",
+            "result": result
+        }
+        
+        return jsonify(response)
             
     except Exception as e:
         return jsonify({
