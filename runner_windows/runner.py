@@ -47,9 +47,11 @@ def run_ebpf_conformance(prog_path, timeout_seconds=30):
 
 @app.route('/run', methods=['POST'])
 def run():
+    print('Received request')
     try:
         # Get the JSON data from the request
         data = request.get_json()
+        print(data)
         
         if not data or 'program' not in data:
             return jsonify({
@@ -68,9 +70,13 @@ def run():
             # Get timeout from request or use default
             timeout = data.get('timeout', 30)
             
+            print('Running conformance test', data['program'])
+
             # Run the conformance test
             result = run_ebpf_conformance(prog_path, timeout)
             
+            print('Conformance test result', result)
+
             # Prepare response
             response = {
                 "status": "success" if result["success"] else "error",
