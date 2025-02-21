@@ -7,8 +7,8 @@ from pathlib import Path
 
 app = Flask(__name__)
 
-RUNNER = 'C:\\ebpf\\ebpf-for-windows\\x64\\Debug\\ebpf_conformance_runner.exe'
-PLUGIN_PATH = 'C:\\ebpf\\ebpf-for-windows\\x64\\Debug\\bpf2c_plugin.exe'
+RUNNER = 'C:/ebpf/ebpf-for-windows/x64/Debug/ebpf_conformance_runner.exe'
+PLUGIN_PATH = 'C:/ebpf/ebpf-for-windows/x64/Debug/bpf2c_plugin.exe'
 
 def run_ebpf_conformance(prog_path, timeout_seconds=30):
     try:
