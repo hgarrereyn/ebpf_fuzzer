@@ -1,0 +1,82 @@
+-- asm
+jsge r7, 0x8ed4cd4d, -0x2e9d
+mul32 r2, 0xfdb6296e
+jslt r4, r2, -0x7d77
+jeq r5, 0x5c309374, -0xb3a
+jge32 r11, 0xf00d687, +0x495c
+xor64 r2, 0x4e3f6d3d
+jeq32 r6, 0x8bd50c97, -0x30b0
+jge r0, 0x62176afd, -0x64e6
+jsgt32 r15, 0x87eac5ca, +0x4080
+ldxdw r14, [r9-0x55a2]
+mul32 r14, 0x5d120517
+ldxh r14, [r11-0x16ca]
+jne r8, r13, +0x699b
+jsle r12, 0x3674c4e6, +0x6181
+jsge32 r3, 0x7d77ce61, +0x1190
+mod32 r0, r0
+div32 r11, 0x962a2ac9
+jsle r6, 0x56894fdf, +0x5ea7
+ldxh r0, [r2+0x6722]
+jsle32 r12, 0x551459e7, -0x363
+mov32 r9, r3
+mod32 r2, 0x9c58552e
+add32 r15, r3
+jsgt r13, r13, -0x2519
+tail_call
+div64 r11, r13
+jsle32 r4, 0x82c05ed4, -0x35c
+ldxw r14, [r4-0x7ab0]
+xor64 r3, 0x8416a615
+jeq32 r15, r10, -0x563e
+tail_call
+jne32 r13, 0x4c24148d, -0x1d32
+stxdw [r14+0x1eb6], r7
+jsgt32 r8, 0x4fce0eca, +0xbf4
+jsle r3, r10, +0x1de0
+ldabsw 0x5a89fb5d
+arsh32 r6, r8
+jlt r2, 0xd89f3b6e, +0x2391
+ldxdw r7, [r6-0x4c4]
+-- raw
+0x8ed4cd4dd1638775
+0xfdb6296eee9c3224
+0x7e5e76e6828924cd
+0x5c309374f4c6d515
+0x0f00d687495c7b36
+0x4e3f6d3d26a4a2a7
+0x8bd50c97cf508616
+0x62176afd9b1a4035
+0x87eac5ca40806f66
+0x83dcaa17aa5e9e79
+0x5d120517c40d8e24
+0x7960324ee936be69
+0xed2ce116699bd85d
+0x3674c4e661813cd5
+0x7d77ce6111900376
+0x4af35da89e01009c
+0x962a2ac90efd2b34
+0x56894fdf5ea7f6d5
+0x5017b44c67222069
+0x551459e7fc9d4cd6
+0xbf2c83c5f08839bc
+0x9c58552eba270294
+0x18b289609aeb3f0c
+0x7aec542cdae7dd6d
+0x7720cacd14962b8d
+0x73fee0027e9edb3f
+0x82c05ed4fca464d6
+0xf80f7e3a85504e61
+0x8416a61523a643a7
+0x7df4ed00a9c2af1e
+0xd2e79c98397eb58d
+0x4c24148de2cebd56
+0x42c477c41eb67e7b
+0x4fce0eca0bf4d866
+0xf2d5f0881de0a3dd
+0x5a89fb5de36fd620
+0xd8d1c8b9d86686cc
+0xd89f3b6e239152a5
+0xbf9a8492fb3c6779
+-- result
+0x0

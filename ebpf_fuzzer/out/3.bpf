@@ -1,0 +1,24 @@
+-- asm
+tail_call
+ldinddw r2, 0x43cba786
+jsle32 r5, 0xd18f04ff, +0x2902
+mov32 r2, r11
+jne32 r11, r6, +0x5bc0
+sub64 r14, r5
+jlt32 r12, 0x5a27bb6b, +0x3afa
+jlt r10, r11, -0x70de
+jeq r2, 0x9ac15d6b, -0x3b93
+lsh64 r7, 0x5f1a0de8
+-- raw
+0x8b5d330d08d79f8d
+0x43cba786ddd82e58
+0xd18f04ff290205d6
+0x8bb55bf29ce8b2bc
+0x7491ba115bc06b5e
+0xaa497597f6a85e1f
+0x5a27bb6b3afa6ca6
+0x066dc6828f22baad
+0x9ac15d6bc46db215
+0x5f1a0de8b578d767
+-- result
+0x0

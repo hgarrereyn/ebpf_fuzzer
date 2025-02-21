@@ -1,0 +1,44 @@
+-- asm
+sth [r12-0x5703], 0x3c99a79e
+add32 r3, r0
+mul32 r5, r13
+jsge r8, 0xa917be8c, -0x79df
+ldxdw r9, [r8+0x4cca]
+mov64 r8, 0x53239d17
+jeq r10, 0x9a0df8b, -0x31e8
+lsh64 r5, 0x393fef4
+div32 r2, 0x42ce66b7
+jset r3, 0xabcb4f7e, -0x53b8
+arsh32 r11, 0x85fad43b
+tail_call
+lsh64 r1, r15
+ldabsb 0x1db79c80
+jsle32 r15, 0xb741cb42, -0x4fe4
+stxdw [r8+0x217f], r11
+jlt r0, r7, +0x4c1a
+jne32 r3, 0x421eb221, -0x7479
+or32 r6, 0x7285e9b0
+jsgt32 r4, 0xecdbee5c, +0x40a5
+-- raw
+0x3c99a79ea8fddc6a
+0x720ba561da41030c
+0x850f64664caed52c
+0xa917be8c86218875
+0x3797d5b54cca8979
+0x53239d17045ba8b7
+0x09a0df8bce18fa15
+0x0393fef499c48567
+0x42ce66b751a0c234
+0xabcb4f7eac48c345
+0x85fad43b77aedbc4
+0xcca2a42fa6e5418d
+0xeb921fc65ac6f16f
+0x1db79c802c6dcf30
+0xb741cb42b01cafd6
+0xc9808627217fb87b
+0x8964fd4e4c1a70ad
+0x421eb2218b87c356
+0x7285e9b07f061644
+0xecdbee5c40a54466
+-- result
+0x0

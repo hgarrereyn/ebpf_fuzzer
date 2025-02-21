@@ -1,0 +1,20 @@
+-- asm
+mov32 r12, 0x363c6753
+ldxdw r11, [r5-0x76ba]
+arsh32 r9, 0xd23e3f56
+jgt32 r0, 0x730252cf, +0x61db
+be-1614220258 r2
+arsh32 r2, r5
+ldxh r0, [r11+0x1bce]
+mul32 r7, 0xd42c5b1c
+-- raw
+0x363c675371c28cb4
+0xeab4c34889465b79
+0xd23e3f56b42d49c4
+0x730252cf61dbe026
+0x9fc8f41efd1022dc
+0xcf7372e6273a52cc
+0x628c76101bceb069
+0xd42c5b1c78028724
+-- result
+0x0

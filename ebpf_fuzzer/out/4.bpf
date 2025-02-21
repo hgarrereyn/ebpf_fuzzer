@@ -1,0 +1,24 @@
+-- asm
+or64 r13, 0xbbe3605c
+arsh64 r5, 0x5a58fd49
+jne32 r10, r7, +0x509e
+jsge32 r11, r6, +0x3c47
+ldxw r4, [r13-0x55c7]
+stxxadddw [r10-0x474], r4
+jlt r7, 0x662a04ee, -0xf58
+ldindh r6, 0x94d0d541
+neg32 r1
+jlt32 r10, 0x8f1a9a10, +0x1a5f
+-- raw
+0xbbe3605c68756d47
+0x5a58fd49e4a345c7
+0xaffbb0e7509e7a5e
+0x4ee5c8f33c476b7e
+0xcd4a4679aa39d461
+0x78df0003fb8c4adb
+0x662a04eef0a867a5
+0x94d0d541ddfa6248
+0xcbfa2ce7361d0184
+0x8f1a9a101a5f7aa6
+-- result
+0x0
