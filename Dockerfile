@@ -31,9 +31,9 @@ RUN cd ebpf_fuzzer && \
     cargo build --release && \
     ./target/release/ebpf_fuzzer \
         --count 100 \
-        --output /fuzz/output/%d.bpf \
+        --output /fuzz/output/%d.data \
         --min-size 3 \
-        --max-size 30
+        --max-size 40
 
 # Inside the container, run:
 
